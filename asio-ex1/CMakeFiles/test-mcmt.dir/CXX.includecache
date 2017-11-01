@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/wilson/proj/boost-asio-examples/common.h
+boost/asio.hpp
+-
+boost/shared_ptr.hpp
+-
+boost/make_shared.hpp
+-
+boost/enable_shared_from_this.hpp
+-
+boost/algorithm/string.hpp
+-
+boost/lexical_cast.hpp
+-
+boost/regex.hpp
+-
+boost/bind.hpp
+-
+boost/thread/thread.hpp
+-
+iostream
+-
+string
+-
+
+/home/wilson/proj/boost-asio-examples/test-mcmt.cpp
+common.h
+/home/wilson/proj/boost-asio-examples/common.h
+deque
+-
+
