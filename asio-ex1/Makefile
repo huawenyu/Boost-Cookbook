@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/wilson/proj/boost-asio-examples
+CMAKE_SOURCE_DIR = /home/wilson/proj/Boost-Cookbook/asio-ex1
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/wilson/proj/boost-asio-examples
+CMAKE_BINARY_DIR = /home/wilson/proj/Boost-Cookbook/asio-ex1
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/proj/boost-asio-examples/CMakeFiles /home/wilson/proj/boost-asio-examples/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/proj/Boost-Cookbook/asio-ex1/CMakeFiles /home/wilson/proj/Boost-Cookbook/asio-ex1/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/proj/boost-asio-examples/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/wilson/proj/Boost-Cookbook/asio-ex1/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,6 +111,32 @@ depend:
 .PHONY : depend
 
 #=============================================================================
+# Target rules for targets named cocti
+
+# Build rule for target.
+cocti: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 cocti
+.PHONY : cocti
+
+# fast build rule for target.
+cocti/fast:
+	$(MAKE) -f CMakeFiles/cocti.dir/build.make CMakeFiles/cocti.dir/build
+.PHONY : cocti/fast
+
+#=============================================================================
+# Target rules for targets named time-timer
+
+# Build rule for target.
+time-timer: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 time-timer
+.PHONY : time-timer
+
+# fast build rule for target.
+time-timer/fast:
+	$(MAKE) -f CMakeFiles/time-timer.dir/build.make CMakeFiles/time-timer.dir/build
+.PHONY : time-timer/fast
+
+#=============================================================================
 # Target rules for targets named test-otpc
 
 # Build rule for target.
@@ -135,6 +161,19 @@ test-mcmt: cmake_check_build_system
 test-mcmt/fast:
 	$(MAKE) -f CMakeFiles/test-mcmt.dir/build.make CMakeFiles/test-mcmt.dir/build
 .PHONY : test-mcmt/fast
+
+#=============================================================================
+# Target rules for targets named pri-que-poll
+
+# Build rule for target.
+pri-que-poll: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 pri-que-poll
+.PHONY : pri-que-poll
+
+# fast build rule for target.
+pri-que-poll/fast:
+	$(MAKE) -f CMakeFiles/pri-que-poll.dir/build.make CMakeFiles/pri-que-poll.dir/build
+.PHONY : pri-que-poll/fast
 
 #=============================================================================
 # Target rules for targets named async-udp
@@ -175,6 +214,60 @@ async_udp_echo_server.s: async_udp_echo_server.cpp.s
 async_udp_echo_server.cpp.s:
 	$(MAKE) -f CMakeFiles/async-udp.dir/build.make CMakeFiles/async-udp.dir/async_udp_echo_server.cpp.s
 .PHONY : async_udp_echo_server.cpp.s
+
+cocti_udp_model.o: cocti_udp_model.cpp.o
+
+.PHONY : cocti_udp_model.o
+
+# target to build an object file
+cocti_udp_model.cpp.o:
+	$(MAKE) -f CMakeFiles/cocti.dir/build.make CMakeFiles/cocti.dir/cocti_udp_model.cpp.o
+.PHONY : cocti_udp_model.cpp.o
+
+cocti_udp_model.i: cocti_udp_model.cpp.i
+
+.PHONY : cocti_udp_model.i
+
+# target to preprocess a source file
+cocti_udp_model.cpp.i:
+	$(MAKE) -f CMakeFiles/cocti.dir/build.make CMakeFiles/cocti.dir/cocti_udp_model.cpp.i
+.PHONY : cocti_udp_model.cpp.i
+
+cocti_udp_model.s: cocti_udp_model.cpp.s
+
+.PHONY : cocti_udp_model.s
+
+# target to generate assembly for a file
+cocti_udp_model.cpp.s:
+	$(MAKE) -f CMakeFiles/cocti.dir/build.make CMakeFiles/cocti.dir/cocti_udp_model.cpp.s
+.PHONY : cocti_udp_model.cpp.s
+
+pri-que-poll.o: pri-que-poll.cpp.o
+
+.PHONY : pri-que-poll.o
+
+# target to build an object file
+pri-que-poll.cpp.o:
+	$(MAKE) -f CMakeFiles/pri-que-poll.dir/build.make CMakeFiles/pri-que-poll.dir/pri-que-poll.cpp.o
+.PHONY : pri-que-poll.cpp.o
+
+pri-que-poll.i: pri-que-poll.cpp.i
+
+.PHONY : pri-que-poll.i
+
+# target to preprocess a source file
+pri-que-poll.cpp.i:
+	$(MAKE) -f CMakeFiles/pri-que-poll.dir/build.make CMakeFiles/pri-que-poll.dir/pri-que-poll.cpp.i
+.PHONY : pri-que-poll.cpp.i
+
+pri-que-poll.s: pri-que-poll.cpp.s
+
+.PHONY : pri-que-poll.s
+
+# target to generate assembly for a file
+pri-que-poll.cpp.s:
+	$(MAKE) -f CMakeFiles/pri-que-poll.dir/build.make CMakeFiles/pri-que-poll.dir/pri-que-poll.cpp.s
+.PHONY : pri-que-poll.cpp.s
 
 test-mcmt.o: test-mcmt.cpp.o
 
@@ -257,6 +350,33 @@ test-otpc.cpp.s:
 	$(MAKE) -f CMakeFiles/test-otpc.dir/build.make CMakeFiles/test-otpc.dir/test-otpc.cpp.s
 .PHONY : test-otpc.cpp.s
 
+time_t_timer.o: time_t_timer.cpp.o
+
+.PHONY : time_t_timer.o
+
+# target to build an object file
+time_t_timer.cpp.o:
+	$(MAKE) -f CMakeFiles/time-timer.dir/build.make CMakeFiles/time-timer.dir/time_t_timer.cpp.o
+.PHONY : time_t_timer.cpp.o
+
+time_t_timer.i: time_t_timer.cpp.i
+
+.PHONY : time_t_timer.i
+
+# target to preprocess a source file
+time_t_timer.cpp.i:
+	$(MAKE) -f CMakeFiles/time-timer.dir/build.make CMakeFiles/time-timer.dir/time_t_timer.cpp.i
+.PHONY : time_t_timer.cpp.i
+
+time_t_timer.s: time_t_timer.cpp.s
+
+.PHONY : time_t_timer.s
+
+# target to generate assembly for a file
+time_t_timer.cpp.s:
+	$(MAKE) -f CMakeFiles/time-timer.dir/build.make CMakeFiles/time-timer.dir/time_t_timer.cpp.s
+.PHONY : time_t_timer.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -264,13 +384,22 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... edit_cache"
+	@echo "... rebuild_cache"
+	@echo "... cocti"
+	@echo "... time-timer"
 	@echo "... test-otpc"
 	@echo "... test-mcmt"
+	@echo "... pri-que-poll"
 	@echo "... async-udp"
-	@echo "... rebuild_cache"
 	@echo "... async_udp_echo_server.o"
 	@echo "... async_udp_echo_server.i"
 	@echo "... async_udp_echo_server.s"
+	@echo "... cocti_udp_model.o"
+	@echo "... cocti_udp_model.i"
+	@echo "... cocti_udp_model.s"
+	@echo "... pri-que-poll.o"
+	@echo "... pri-que-poll.i"
+	@echo "... pri-que-poll.s"
 	@echo "... test-mcmt.o"
 	@echo "... test-mcmt.i"
 	@echo "... test-mcmt.s"
@@ -280,6 +409,9 @@ help:
 	@echo "... test-otpc.o"
 	@echo "... test-otpc.i"
 	@echo "... test-otpc.s"
+	@echo "... time_t_timer.o"
+	@echo "... time_t_timer.i"
+	@echo "... time_t_timer.s"
 .PHONY : help
 
 

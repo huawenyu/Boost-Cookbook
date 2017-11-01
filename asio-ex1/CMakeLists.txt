@@ -29,6 +29,18 @@ TARGET_LINK_LIBRARIES(async-udp ${USED_LIBS})
 ADD_EXECUTABLE(pri-que-poll pri-que-poll.cpp)
 TARGET_LINK_LIBRARIES(pri-que-poll ${USED_LIBS})
 
+
+#ADD_EXECUTABLE(tick-timer tick_count_timer.cpp)
+#TARGET_LINK_LIBRARIES(tick-timer ${USED_LIBS})
+
+
+ADD_EXECUTABLE(time-timer time_t_timer.cpp)
+TARGET_LINK_LIBRARIES(time-timer ${USED_LIBS})
+
+
+ADD_EXECUTABLE(cocti cocti_udp_model.cpp)
+TARGET_LINK_LIBRARIES(cocti ${USED_LIBS})
+
 #ADD_EXECUTABLE(test-otpc-tp test-otpc-tp.cpp test-otpc-conn.cpp)
 #TARGET_LINK_LIBRARIES(test-otpc-tp ${USED_LIBS})
 
