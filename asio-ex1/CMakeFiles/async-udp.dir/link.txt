@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/async-udp.dir/async_udp_echo_server.cpp.o  -o async-udp -rdynamic -lboost_system -lboost_thread -lboost_regex 

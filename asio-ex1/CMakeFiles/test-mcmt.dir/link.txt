@@ -1,1 +1,0 @@
-/usr/bin/c++      CMakeFiles/test-mcmt.dir/test-mcmt.cpp.o  -o test-mcmt -rdynamic -lboost_system -lboost_thread -lboost_regex 
