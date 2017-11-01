@@ -26,6 +26,9 @@ ADD_EXECUTABLE(async-udp async_udp_echo_server.cpp)
 TARGET_LINK_LIBRARIES(async-udp ${USED_LIBS})
 
 
+ADD_EXECUTABLE(pri-que-poll pri-que-poll.cpp)
+TARGET_LINK_LIBRARIES(pri-que-poll ${USED_LIBS})
+
 #ADD_EXECUTABLE(test-otpc-tp test-otpc-tp.cpp test-otpc-conn.cpp)
 #TARGET_LINK_LIBRARIES(test-otpc-tp ${USED_LIBS})
 
